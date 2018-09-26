@@ -28,6 +28,13 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'qoutes' => [
+      'Ales',
+      'John',
+      'Test',
+      'String'
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
