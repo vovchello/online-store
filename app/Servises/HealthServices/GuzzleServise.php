@@ -12,15 +12,32 @@ namespace App\Servises\HealthServices;
 use App\Servises\HealthCheckInterface;
 use GuzzleHttp\Client;
 
+/**
+ * Class GuzzleServise
+ * @package App\Servises\HealthServices
+ */
 class GuzzleServise implements HealthCheckInterface
 {
+    /**
+     * @var Client
+     */
     private $client;
 
+    /**
+     * GuzzleServise constructor.
+     * @param Client $client
+     */
     public function __construct(Client $client){
 
         $this->client = $client;
     }
 
+    /**
+     * Checks url
+     *
+     * @param $url
+     * @return int
+     */
     public function checkHealth($url)
     {
 
@@ -31,6 +48,12 @@ class GuzzleServise implements HealthCheckInterface
     }
 
 
+    /**
+     * Get request
+     *
+     * @param $url
+     * @return \Psr\Http\Message\ResponseInterface
+     */
     private function getRequest($url){
 
         return $request = $this->client->head($url);

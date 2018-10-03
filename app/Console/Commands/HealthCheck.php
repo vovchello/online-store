@@ -6,9 +6,16 @@ use App\Servises\HealthCheckInterface;
 use Illuminate\Console\Command;
 use CheckHealth;
 
+/**
+ * Class HealthCheck
+ * @package App\Console\Commands
+ */
 class HealthCheck extends Command
 {
 
+    /**
+     * @var HealthCheckInterface
+     */
     protected $client;
     /**
      * The name and signature of the console command.
@@ -36,11 +43,22 @@ class HealthCheck extends Command
         $this->client = $client;
     }
 
+    /**
+     * Function that gets command argument
+     *
+     * @param $argument
+     * @return array|string
+     */
     private function getArgument($argument){
         $this->validateUrl($this->argument($argument));
         return $this->argument($argument);
     }
 
+    /**
+     * Url validation function
+     *
+     * @param $url
+     */
     private function validateUrl($url):void {
         if (filter_var($url, FILTER_VALIDATE_URL) === FALSE) {
             dd('Not a valid URL');
