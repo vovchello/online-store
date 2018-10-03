@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
+class ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -79,6 +79,10 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
         array (
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
+        ),
+        'J' => 
+        array (
+            'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
         'I' => 
         array (
@@ -243,6 +247,10 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'JakubOnderka\\PhpConsoleColor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -326,10 +334,6 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
             array (
                 0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
             ),
-            'JakubOnderka\\PhpConsoleColor' => 
-            array (
-                0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
-            ),
         ),
         'D' => 
         array (
@@ -341,7 +345,7 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
     );
 
     public static $classMap = array (
-        'App\\Console\\Commands\\Healthcheck' => __DIR__ . '/../..' . '/app/Console/Commands/Healthcheck.php',
+        'App\\Console\\Commands\\HealthCheck' => __DIR__ . '/../..' . '/app/Console/Commands/HealthCheck.php',
         'App\\Console\\Commands\\Qoute' => __DIR__ . '/../..' . '/app/Console/Commands/Qoute.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -361,6 +365,7 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Servises\\HealthCheckInterface' => __DIR__ . '/../..' . '/app/Servises/HealthCheckInterface.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
@@ -1838,8 +1843,8 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
-        'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
-        'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
+        'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
+        'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
@@ -3246,7 +3251,6 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
         'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
-        'Symfony\\Component\\EventDispatcher\\ContainerAwareEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/ContainerAwareEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/WrappedListener.php',
@@ -3778,11 +3782,11 @@ class ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit628338b7bc1e67394e93e5f381efd9ef::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit499f7569958ec8c3ff82fe236ab8f779::$classMap;
 
         }, null, ClassLoader::class);
     }
